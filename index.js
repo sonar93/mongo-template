@@ -11,7 +11,7 @@ require('./person.model')
 const Person = mongoose.model('persons')
 
 const person = new Person({
-    name: 'Narek Sona Grigoryan',
+    name: 'Narek Grigoryan',
     age: 19,
     isMarried: true,
     phone: [093204507]
@@ -26,7 +26,7 @@ const person = new Person({
 //     console.log(JSON.stringify(persons, null, 2))
 // })
 
-Person.find({name: 'Narek Sona Grigoryan'})
+Person.find({name: 'Narek Grigoryan'})
 .sort('age')
 .then(persons => {
     console.log(JSON.stringify(persons, null, 2))
